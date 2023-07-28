@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container"> <div id="box" onclick="countIncrease()"></div> 
+
+    <div class="text"><h1> Box Clicked <span id="click-count" data="0"> 0 </span> times </h1></div></div>
+   
+<script>
+    console.log("working");
+    let x=document.getElementById('click-count').getAttribute('data');
+    function countIncrease(){
+        // let id=document.getElementById('box');
+        
+        //    let x=parseInt(document.getElementById('click-count').innerHTML) ;
+       
+           console.log(x);
+           ++x;
+        //    id.innerHTML='x';
+        document.getElementById('click-count').innerHTML=x;
+       
+    }
+</script>
+</body>
+</html>
