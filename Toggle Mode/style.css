@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     display: flex; 
+    align-items: center;
+    justify-content:center !important;
+    flex-direction: column; 
+    height:100vh;
+    transition: .4s ease-in-out;
+}
+.button{
+    width: 9rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top:100px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    cursor: pointer;
+    transition: .4s linear;
+}
+.active{
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    background-color: black;
+    margin-right: 2px;
+color: white;
+}
+.adding{
+    justify-content:flex-end;
+}
+
+#ball{
+    height:40px; 
+    width:40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 2px;
+    z-index: 1;
+}
+.active #ball{
+    background-color: #fff;
+    margin-right:2px;
+}
+h1{
+    margin-top:10vh;
+    font-size:5rem;
+}
+.background{
+    color: white;
+}

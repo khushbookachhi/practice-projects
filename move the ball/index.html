@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move the Ball</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        #ball{
+            width:12rem;
+            height:12rem;
+            background-color: rgb(219, 38, 6);
+            border-radius: 50%;
+            position:absolute;
+            top:0px;
+            left:0px;
+            /* transition: all 0.3s ease-in; */
+        }
+        body{
+            background-color: rgb(247, 245, 248);
+        }
+    </style>
+</head>
+<body>
+    <div id="ball">
+
+    </div>
+    <script>
+        console.log("hello world");
+        let ball=document.getElementById('ball');
+        let x=5, y=5;
+        let ballMeter=ball.getBoundingClientRect();
+        const width = window.innerWidth;
+const height = window.innerHeight;
+console.log(width, height);
+        
+        document.addEventListener('keydown',(e)=>{
+         if(e.key=='ArrowRight' && x<=(window.innerWidth-ballMeter.height+2)){
+            ball.style.left=x+'px';
+            x=x+5;
+         }else if(e.key=='ArrowLeft' && x>=2 ){
+            x=x-5;
+            ball.style.left=x+'px';
+         }else if(e.key=='ArrowUp' && y>=2){
+            y=y-5;
+            ball.style.top=y+'px';
+         }else if(e.key=='ArrowDown' && y<=(window.innerHeight-ballMeter.height+2)){
+            ball.style.top=y+'px';
+            y=y+5;
+         }
+
+        //  console.log(ball.getBoundingClientRect());
+        })
+        console.log(ball.getBoundingClientRect());
+        
+    </script>
+</body>
+</html>

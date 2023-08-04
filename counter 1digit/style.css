@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(247, 164, 236);
+    /* font-family:sans-serif; */
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 40vh;
+    width: 90vw;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right,blueviolet, rgb(228, 10, 46));
+    letter-spacing: 15px;
+    font-size: 1.5rem;
+    color: rgb(12, 228, 145);
+    margin-top: 2rem;
+}
+/* .input-container h1{
+    margin-bottom: ;
+} */
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 0 8rem;
+    /* border-top:5px solid aqua; */
+    height: 20vh;
+    
+}
+input{
+    padding:0.4rem 0.7rem;
+    /* color: rgb(4, 8, 245); */
+    background-color: rgb(183, 243, 223);
+    border: none;
+    box-shadow:inset 1px 2px 2px 1px rgb(109, 112, 112);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+button{
+    padding:0.8rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius:40px;
+    border: none;
+    box-shadow: 1px 2px 20px 1px rgb(19, 233, 205);
+}
+button:active{
+    transform:scale(1.001);
+}
+button:hover{
+opacity: 0.9;
+cursor: pointer;
+}
+.display{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    margin: 2rem auto;
+    /* border-top:5px solid aqua; */
+    height: 30vh;
+    padding-top:.9vh;
+    background: linear-gradient(to bottom right,rgb(42, 85, 228),rgb(190, 46, 219));
+    /* position: relative; */
+}
+p{
+    text-align: center;
+    line-height: 80px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-top: 2px solid black;
+    font-size:5rem;
+   
+    /* box-shadow:inset 1px 2px 2px 2px rgb(109, 112, 112); */
+}
+
+p.next{
+       position: absolute;
+       top: 100px;
+    }
+ p.animate{
+    transition: all 0.5s;
+    top:0px;
+ }   
